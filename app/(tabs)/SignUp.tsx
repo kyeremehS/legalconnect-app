@@ -40,7 +40,7 @@ export default function GetStartedScreen() {
           <TouchableOpacity
             style={styles.button}
             activeOpacity={0.8}
-            onPress={() => router.push("/SignUp")}
+            onPress={() => router.push("/UserPage")}
           >
             <Text style={styles.buttonText}>Get Started</Text>
           </TouchableOpacity>

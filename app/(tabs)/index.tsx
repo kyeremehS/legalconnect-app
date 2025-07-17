@@ -90,13 +90,22 @@ export default function LandingScreen() {
 						Get instant legal guidance, connect with trusted lawyers, and learn
 						your rights through short, engaging videos. All in one secure platform.
 					</Text>
+          <View style={styles.GetStartedButton}>
 					<TouchableOpacity
 						style={styles.heroButton}
 						onPress={() => router.push("/SignUp")}
 					>
-						<Text style={styles.heroButtonText}>Get Started Free</Text>
+						<Text style={styles.heroButtonText}>Get Started</Text>
 						<Feather name="arrow-right" size={20} color="#fff" />
 					</TouchableOpacity>
+          	<TouchableOpacity
+						style={styles.heroButton}
+						onPress={() => router.push("/SignUp")}
+					>
+						<Text style={styles.heroButtonText}>For Consultant</Text>
+						<Feather name="arrow-right" size={20} color="#fff" />
+					</TouchableOpacity>
+          </View>
 					<Image
 						source={require("../../assets/images/hero-image.webp")}
 						style={styles.heroImage}
@@ -148,7 +157,7 @@ export default function LandingScreen() {
 					</Text>
 					<TouchableOpacity
 						style={[styles.ctaButton, { backgroundColor: "#fff" }]}
-						onPress={() => router.push("/Consultation")}
+						onPress={() => router.push("/SignUp")}
 					>
 						<Text
 							style={{
@@ -353,4 +362,11 @@ const styles = StyleSheet.create({
 		borderRadius: 32,
 		elevation: 4,
 	},
+  GetStartedButton: {
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  gap: 10,
+    }
+
 });

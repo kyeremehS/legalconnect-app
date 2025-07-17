@@ -17,6 +17,13 @@ export default function RootLayout() {
             headerShown: false,
           }}
         />
+        <Stack.Screen
+          name="UserPage"
+          options={{
+            headerShown: false,
+
+          }}
+        />
               </Stack>
               
           );
