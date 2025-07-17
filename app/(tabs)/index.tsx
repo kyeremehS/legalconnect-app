@@ -172,7 +172,7 @@ export default function LandingScreen() {
 				</View>
 
 				{/* Testimonials */}
-				<View style={styles.section}>
+				{/* <View style={styles.section}>
 					<Text style={styles.sectionTitle}>What Our Users Say</Text>
 					{testimonials.map((t, idx) => (
 						<View key={idx} style={styles.testimonialCard}>
@@ -194,7 +194,7 @@ export default function LandingScreen() {
 							</View>
 						</View>
 					))}
-				</View>
+				</View> */}
 			</ScrollView>
 
 			{/* Floating Chat Button */}
